@@ -87,6 +87,7 @@
       }
       return rowSum > 1;
     },
+    // **Time complexity: O(n)
 
     // test if any rows on this board contain conflicts
     hasAnyRowConflicts: function() {
@@ -98,6 +99,7 @@
       }
       return false;
     },
+    // *Time complexity*: O(n^2)
 
 
 
@@ -119,6 +121,7 @@
 
       return false; 
     },
+    // *Time complexity*: O(n)
 
     // test if any columns on this board contain conflicts
     hasAnyColConflicts: function() {
@@ -133,6 +136,7 @@
 
       return false;
     },
+    // *Time complexity*: O(n^2)
 
 
 
@@ -184,6 +188,8 @@
       return conflict; 
     },
 
+    //*Time complexity*: O(n)
+
     // test if any major diagonals on this board contain conflicts
     hasAnyMajorDiagonalConflicts: function() {
       var rows = this.rows();
@@ -196,6 +202,8 @@
       }
       return false;    
     },
+
+    //*Time complexity*: O(n^2)
 
 
 
@@ -236,6 +244,8 @@
       return conflict; // fixme
     },
 
+    //*Time complexity*: O(n);
+
     // test if any minor diagonals on this board contain conflicts
     hasAnyMinorDiagonalConflicts: function() {
 
@@ -249,6 +259,8 @@
       }
       return false; // fixme
     }
+
+    //*Time complexity*: O(n^2);
 
     /*--------------------  End of Helper Functions  ---------------------*/
 
